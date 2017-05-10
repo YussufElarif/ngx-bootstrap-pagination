@@ -1,8 +1,5 @@
 # Ng2BootstrapPagination
 
-## Update
-Fix is under the ```feature/fix``` branch
-
 ## Intro
 The pagination is set so that it goes to page 1 whenever the dropdown list has been changed
 
@@ -30,3 +27,6 @@ goto ```http://localhost:4200```
 2. select page 3 (or any other page that exists within the limits of "brand" pagination length (e.g. up to page 6))
 3. select "brand" in drop down list
 4. Goes to page 1
+
+## Update
+Fix is now under the ```feature/fix``` branch
