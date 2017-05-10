@@ -1,5 +1,8 @@
 # Ng2BootstrapPagination
 
+## Update
+Fix is under the ```fix``` branch
+
 ## Intro
 The pagination is set so that it goes to page 1 whenever the dropdown list has been changed
 
