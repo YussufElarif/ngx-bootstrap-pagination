@@ -1,3 +1,17 @@
-<h1>
-  {{title}}
-</h1>
+<div class="text-center">
+  <h1>ng2-bootstrap pagination</h1>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <select (change)="selected($event.target.value)">
+      <option *ngFor="let option of dropDownList" [value]="option.id">{{ option.title[0].toUpperCase() + option.title.slice(1) }}</option>
+    </select>
+  </div>
+  <div class="col-xs-12">
+    <ul>
+      <li *ngFor="let item of paginatedResults">{{ item }}</li>
+    </ul>
+    <pagination [ngModel]="currentPage" [totalItems]="total" [itemsPerPage]="itemsPerPage" [maxSize]="maxNoOfPages" [boundaryLinks]="true" 
+    (pageChanged)="pageChanged($event.page)"></pagination>
+  </div>
+</div>
