@@ -12,6 +12,6 @@
       <li *ngFor="let item of paginatedResults">{{ item }}</li>
     </ul>
     <pagination [ngModel]="currentPage" [totalItems]="total" [itemsPerPage]="itemsPerPage" [maxSize]="maxNoOfPages" [boundaryLinks]="true" 
-    (pageChanged)="pageChanged($event.page)"></pagination>
+    (pageChanged)="pageChanged($event.page)" (numPages)="changePage($event)"></pagination>
   </div>
 </div>
