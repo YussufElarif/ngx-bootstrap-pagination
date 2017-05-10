@@ -26,4 +26,4 @@ goto ```http://localhost:4200```
 1. select "item" in drop down list
 2. select page 3 (or any other page that exists within the limits of "brand" pagination length (e.g. up to page 6))
 3. select "brand" in drop down list
-- Goes to page 1
+4. Goes to page 1
