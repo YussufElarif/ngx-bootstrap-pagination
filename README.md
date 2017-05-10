@@ -1,5 +1,8 @@
 # Ng2BootstrapPagination
 
+## Intro
+The pagination is set so that it goes to page 1 whenever the dropdown list has been changed
+
 ## Setup
 ```
 npm install
@@ -10,19 +13,16 @@ goto ```http://localhost:4200```
 
 ## Steps to reproduce bug
 
+1. select "item" in drop down list
+2. select the **LAST** page
+3. select "brand" in drop down list
+
 ### What I expect to happen &#10004;
-1. select "item" in drop down list
-2. select the LAST page
-3. select "brand" in drop down list
- - SHOULD go to Page 1;
-
+ - Should go to page 1
 ### What it currently does &#10006;
-1. select "item" in drop down list
-2. select the LAST page
-3. select "brand" in drop down list
- - Doesn't go to Page 1
+ - Goes to last page in pagination list
 
- ### Example of what works and how it should interact
+### Example of what works and how it should interact
 1. select "item" in drop down list
 2. select page 3
 3. select "brand" in drop down list 
